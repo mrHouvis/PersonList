@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".EditRecordActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/display_text"
+        android:text="Person information"
+        android:gravity="center"
+        android:textSize = "25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:id="@+id/personImage"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/display_text"
+        android:padding="2dp"
+        android:src="@drawable/ic_action_addphoto"
+        />
+
+    <EditText
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/personName"
+        android:layout_below="@id/personImage"
+        android:hint="Enter your name"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/personAge"
+        android:layout_below="@id/personName"
+        android:hint="Enter your age"
+        android:inputType="number"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/personPhone"
+        android:layout_below="@id/personAge"
+        android:hint="Enter your phone"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addButton"
+        android:layout_below="@id/personPhone"
+        android:layout_centerHorizontal="true"
+        android:text="Update Info"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background"
+        />
+
+</RelativeLayout>

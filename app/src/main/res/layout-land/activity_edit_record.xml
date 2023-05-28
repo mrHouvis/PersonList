@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".EditRecordActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/display_text"
+        android:text="Person information"
+        android:gravity="center"
+        android:textSize = "30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/personImage"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/display_text"
+        android:padding="2dp"
+        android:src="@drawable/ic_action_addphoto"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout"
+        android:layout_below="@id/display_text"
+        android:layout_toRightOf="@id/personImage"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/personName"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter your name"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/personAge"
+        android:layout_below="@id/personName"
+        android:hint="Enter your age"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/personPhone"
+        android:layout_below="@id/personAge"
+        android:hint="Enter your phone"
+        android:layout_centerHorizontal="true"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background"
+        />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addButton"
+        android:layout_below="@id/layout"
+        android:layout_centerHorizontal="true"
+        android:text="Update Info"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background"
+        />
+
+</RelativeLayout>
